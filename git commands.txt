@@ -1,0 +1,37 @@
+1 git init                  //to just put in git 
+2 git add .                 //to all files in that folder
+3 git add file.txt           //specific file in that folder
+3 git status                  //tells us about either added or modified ..etc
+4 git commit -m "My First Commit" filename or it will take all files      //this will commit means saves in history and m statnds for message here this will after (git add).
+5 git -restore --staged /file						 //this will removes wherever "git add" stored it
+6 git log 								//full history who had commit on which time and how much lines and etc..
+7 git reset "hash id of commit"   			//not in quotes simply copy the hash id from "git log" command SO above the commit which belongs to this hash id will be deleted and 	//in reality they will bw unstaged
+8 git stash 			// if will go back in your project and put all work which is modified put them in backstage 
+9 git stash pop   		//bring them back from backstage 
+10 git stash clear    		//data in backstage will be cleared
+11  git remote add origin https//github.com/Bhargav644/First_Repo.git  //adding our repo link in our file locally remote means working with url's
+12  git remote -v   		//all url's related to your project
+13 git push origin <branch> for our use it is master  so cmmnd is "git push origin master"  //used to push our file in our repo on github
+14 git branch second    		//second branch is made here but the pointer is till ono master or main branch
+15 git checkout second  		//now the epointer is on second branch
+16 git checkout logId //to checkout from one commit to that commit
+
+16 git checkout -b newbranch  //branch will be created and will bw checkout to that branch
+16 git merge second  		//now your second branch is part of main/master branch
+17 git push origin <branch name >   				//then you have to push the branch has 
+18 first step tp fork it so by which it will led you to your account then use command " git clone <url>"
+19 origin is our personal urls's and upstream is other's repo url's.
+20. git clone <url>  //to use any of project
+
+
+21 most important to fetch daily updats in upstream to your origin branch
+adding upstream url by : git remote add upstream <url>
+...........form you have forked the project......
+step 1:git fetch --all --prune
+step 2:git reset --hrad upstream/main
+
+another way is 
+git pull upstream main
+
+step 3 :git push origin main
+
